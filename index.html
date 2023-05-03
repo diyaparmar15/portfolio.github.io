@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf66214ad3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class ="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineering Student</p>
+                <h1>Hi, My name is <br><span> Diya</span> Parmar</h1>
+            </div>
+        </div>
+
+    </div>
+<!-----------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src = "images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p1>Hey there, I'm Diya Parmar, a software engineering student at the University of Guelph, who's on a mission to conquer the world of software development! I love exploring new tech and learning innovative ways to code my way out of problems.
+                        When I'm not in front of my computer, you'll find me tapping away at the piano, trying out new recipes in the kitchen, or enjoying a leisurely stroll. These hobbies help me keep my creative juices flowing and provide the necessary balance to keep me fresh and focused.
+                        I bring a unique blend of technical skills and project management expertise to the table, and I'm eager to dive into the world of software and make a difference. Let's create some amazing tech together!</p1>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick = "opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick = "opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>Languages and Frameworks:</span><br>Java, C, Python, HTML, CSS, JavaScript, SQL</li>
+                                <li><span>IDE's:</span><br>MacOS, Windows, Linux</li>
+                                <li><span>Tools:</span><br>Git, SQLite, Docker, Gradle, JUnit, Trello, VS Code</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "experience">
+                            <ul>
+                                <li><span>Web Developer for Sandwich Station - 2023</span><br>Developing and designing a user‐friendly primary website for this new upcoming restaurant using HTML, CSS, and JavaScript.
+                                    Added features like online ordering, menu, and retreiving contact info, the website is intended to increase convenience for customers.</li>
+                                <li><span>Programming Tutor 2022 - Present</span><br>Collaborated with students to work on beginner Java, C, and Python lessons, mainly focusing on object‐oriented programming concepts.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "education">
+                            <ul>
+                                <li><span>University of Guelph, 2021 - Present </span><br>Bachelor of Computing, Software Engineering with a minor in Project Management</li>
+                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------ interests --------------->
+
+<div id="interests">
+    <div class="container">
+        <h1 class="sub-title">Interests</h1>
+        <div class="interests-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Development</h2>
+                <p> I am interested in software development, and I enjoy the process of designing 
+                    and building computer programs and applications. 
+                    The intricate details of coding fascinate me, 
+                    and I am passionate about creating innovative solutions 
+                    to complex problems using technology.</p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>I am passionate about app design and enjoy the process of creating engaging 
+                    and user-friendly mobile applications. I am fascinated by the potential of 
+                    technology to improve our daily lives, and I love being able to contribute 
+                    to that through my design work.</p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Design</h2>
+                <p> I am fascinated by the way that user experience and visual design intersect 
+                    to create powerful digital experiences. I love to experiment with different 
+                    design techniques and tools, constantly seeking new ways to create engaging 
+                    and memorable websites. Ultimately, I believe that great web design has the 
+                    power to transform businesses and organizations, and I feel privileged to be 
+                    a part of that process.</p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-----------Portfolio-------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/chem.png">
+                <div class="layer">
+                    <h3>Molecule Viewer</h3>
+                    <p>Upload SDF files and view your rotational 3D Molecule</p>
+                    <a href = "https://github.com/diyaparmar15/MoleculeWebApp"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/game.png">
+                <div class="layer">
+                    <h3>Game GUI</h3>
+                    <p>Graphical user interface that allows two users to play a game interactively</p>
+                    <a href = "https://github.com/diyaparmar15/TIcTacToeGuiProject"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/covid.png">
+                <div class="layer">
+                    <h3>COVID-19 Analysis</h3>
+                    <p>Analyze COVID-19 data plots generated by this Python Progam</p>
+                    <a href = "https://github.com/diyaparmar15/Covid19Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a> 
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/diyaparmar15" class = "btn">See more</a>
+    </div>
+
+</div>
+
+<!-----------contact---------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class = "contact-left">
+                <h1 class= "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> dparma01@uoguelph.ca</p>
+                <p><i class="fa-solid fa-phone"></i>647-633-9115</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/dparmar15"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/diyaparmar15"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Diya's_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email", required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Diya. Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9q0eJ86eLg_khJy-6qZDFhWdTB2w_dzzPTcpBXOEnWY9kNzzIQcnt74TsQxR7xrtp0Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
